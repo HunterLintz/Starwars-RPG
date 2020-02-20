@@ -27,7 +27,6 @@ h1{
   color: #070D13;
   font-weight: bolder;
   letter-spacing: 10px;
-
   text-shadow: 0 0 8px #FFE81F, 0 0 8px #FFE81F; 
   
 }
@@ -35,32 +34,94 @@ h2{
   font-size: 40px;
   width: 100%;
   text-align: center;
-  margin-top: 25px;
+  margin-top: 50px;
   color: #FFE81F;
   letter-spacing: 5px;
 
 }
+#h2{
+  margin-bottom: 75px;
+}
+.playerImages{
+  height: 300px;
+  margin-top: 25px;
+  margin-bottom: 300px;
+}
 img{
   display: grid;
   background-color: #1A1F26;
-  margin-top: 25px;
   width: 100%;
   height: 100%;
   border: 5px solid #FFE81F;
 }
 .images{
   margin-left: 7.5%;
-  width: 15%;
-  height: 15%;
+  width: 300px;
+  height: 300px;
   float: left;
+  margin-bottom: 100px;
 }
 .lb{
   width: 100%;
   font-size: 20px;
   color: #070D13;
   background-color: #FFE81F;
-  padding-top: 3px;
-  padding-bottom: 5px;
   text-align: center;
   clear: both;
+}
+h3{
+  color: #FFE81F;
+  margin-bottom: 25px;
+}
+#fight{
+  width: 100%;
+
+}
+.fightColumn{
+  text-align: center;
+  margin-left: 8%;
+  width: 15%;
+  float: left;
+  margin-bottom: 300px;
+}
+.imagesFight{
+  float: left;
+  width: 300px;
+  margin-bottom: 25px;
+}
+h4{
+  font-size: 15px;
+}
+Footer{
+  width: 100%;
+  clear: both;
+  bottom: 0;
+  position: fixed;
+  background-color: #070D13;
+  height: 70px;
+}
+#foot{
+  color: #FFE81F;
+  letter-spacing: 2px;
+  border-top: 5px double #FFE81F;
+  padding-top: 40px;
+  text-align: center;
+}
+#luke:hover{
+  transform: scale(1.05);
+}
+#hanSolo:hover{
+  transform: scale(1.05);
+}
+#vader:hover{
+  transform: scale(1.05);
+}
+#palpy:hover{
+  transform: scale(1.05);
+}
+@media only screen and (max-width:1715px){
+  .playerImages{
+    height: 700px;
+    margin-left: 8%;
+  }
 }
