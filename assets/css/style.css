@@ -83,11 +83,23 @@ h3{
   width: 15%;
   float: left;
   margin-bottom: 300px;
+  border-left: 5px solid #FFE81F;
 }
 .imagesFight{
   float: left;
   width: 300px;
   margin-bottom: 25px;
+}
+button{
+  width: 300px;
+  height: 35px;
+  margin-left: 7.5%;
+  margin-bottom: 15px;
+  background-color: #FFE81F;
+  border-color: #070D13;
+}
+button:hover{
+  transform: scale(1.05);
 }
 h4{
   font-size: 15px;
@@ -107,16 +119,10 @@ Footer{
   padding-top: 40px;
   text-align: center;
 }
-#luke:hover{
+.fighter:hover{
   transform: scale(1.05);
 }
-#hanSolo:hover{
-  transform: scale(1.05);
-}
-#vader:hover{
-  transform: scale(1.05);
-}
-#palpy:hover{
+.avail:hover{
   transform: scale(1.05);
 }
 @media only screen and (max-width:1715px){

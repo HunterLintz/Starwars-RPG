@@ -25,25 +25,25 @@
       <h2 id="h2">Pick a Fighter!</h2>
     </div>
     <div class="playerImages">
-      <div class="images" id="luke">
+      <div class="images avail fighter" id="pL" val = "luke">
         <div class="lb">Luke Skywalker</div>
         <img src="assets/images/luke.png" alt="">
         <div class="lb" id="lukeHealth">Health: 120</div>
         <div class="lb" id="lukeAttack">Attack: 8</div>
       </div>
-      <div class="images" id="hanSolo">
+      <div class="images avail fighter" id="pHS" val = "han">
         <div class="lb">Han Solo</div>  
         <img src="assets/images/hanSolo.png" alt=""> 
         <div class="lb" id="hanHealth">Health: 100</div>  
         <div class="lb" id="hanAttack">Attack: 5</div> 
       </div>
-      <div class="images" id="vader">
+      <div class="images avail fighter" id="pV" val = "vader">
         <div class="lb">Darth Vader</div>
         <img id="vader" src="assets/images/vader.png" alt="">
         <div class="lb" id="vaderHealth">Health: 150</div>
         <div class="lb" id="vaderAttack">Attack: 20</div>
       </div>
-      <div class="images" id="palpy">
+      <div class="images avail fighter" id="pP" val = "palpy">
         <div class="lb">Emperor Palpy</div>
         <img src="assets/images/palpy.png" alt="">
         <div class="lb" id="palpyHealth">Health: 180</div>
@@ -51,35 +51,31 @@
       </div>
     </div>
   </div>
-  <div style="display: none;" id="fight">
+  <div id="fight">
     <div>
-      <h2>Pick Your Enemy!</h2>
+      <h2>Pick Your Next Enemy!</h2>
     </div>
     <div class="fightContainer">
       <div class="fightColumn" id="uColumn">
         <h3>You:</h3>
-        <div class="imagesFight">
+        <button type="button">Attack</button>
 
-        </div>
       </div>
       <div class="fightColumn" id="cColumn">
         <h3>Current Enemy:</h3>
-        <div class="imagesFight">
 
-        </div>
+
       </div>
       <div class="fightColumn" id="aColumn">
         <h3>Available Enemies:</h3>
-        <div class="imagesFight">
 
-        </div>
 
       </div>
       <div class="fightColumn" id="dColumn">
         <h3>Dead Enemies:</h3>
-        <div class="imagesFight">
 
-        </div>
+
+      </div>
       </div>
     </div>
   </div>
