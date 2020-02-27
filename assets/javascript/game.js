@@ -2,17 +2,21 @@ $(document).ready(function() {
 
   var fighters = [
     luke = {name:"Luke",
-            health: 120,
-            attack: 8},
+            health: 130,
+            attack: 10,
+            counterAttack:18},
     hanSolo = {name:"Han",
             health: 100,
-            attack: 5},
+            attack: 15,
+            counterAttack:15},
     vader = {name:"Vader",
             health: 150,
-            attack: 20},
+            attack: 12,
+            counterAttack:20},
     palpy = {name:"Palpy",
             health: 180,
-            attack: 25},
+            attack: 14,
+            counterAttack:20},
   ]
   var currentFighter;
   var currentEnemy;
@@ -100,8 +104,8 @@ $(document).ready(function() {
           currentEnemy = fighters[3]
           $("#cColumn").append($("#pP"));
           $("#pP").removeClass("avail").addClass("current");
-          $("#vaderH").addClass("currentEH");
-          $("#vaderA").addClass("currentEA");
+          $("#palpyH").addClass("currentEH");
+          $("#palpyA").addClass("currentEA");
         }
         baseEnemyHealth = currentEnemy.health;
         pickedFighter = true;
@@ -138,7 +142,7 @@ $(document).ready(function() {
             });
           }
         }else{
-          currentFighter.health -= currentEnemy.attack;
+          currentFighter.health -= currentEnemy.counterAttack;
           $(".currentFH").text(currentFighter.health);
           currentFighter.attack += baseAttack;
           $(".currentFA").text(currentFighter.attack);
