@@ -32,7 +32,7 @@ $(document).ready(function() {
       $(".fighter").off();
       if(id == "pL"){
         currentFighter = fighters[0];
-        $("#pL").removeClass("avail");
+        $("#pL").removeClass("avail").addClass("you");
         $("#uColumn").append($("#pL"));
         $("#aColumn").append($("#pHS"));
         $("#aColumn").append($("#pV"));
@@ -41,7 +41,7 @@ $(document).ready(function() {
         $("#lukeA").addClass("currentFA");
       }else if(id == "pHS"){
         currentFighter = fighters[1];
-        $("#pHS").removeClass("avail");
+        $("#pHS").removeClass("avail").addClass("you");
         $("#uColumn").append($("#pHS"));
         $("#aColumn").append($("#pL"));
         $("#aColumn").append($("#pV"));
@@ -50,7 +50,7 @@ $(document).ready(function() {
         $("#hanA").addClass("currentFA");
       }else if(id == "pV"){
         currentFighter = fighters[2];
-        $("#pV").removeClass("avail");
+        $("#pV").removeClass("avail").addClass("you");
         $("#uColumn").append($("#pV"));
         $("#aColumn").append($("#pL"));
         $("#aColumn").append($("#pHS"));
@@ -59,7 +59,7 @@ $(document).ready(function() {
         $("#vaderA").addClass("currentFA");
       }else if(id == "pP"){
         currentFighter = fighters[3];
-        $("#pP").removeClass("avail");
+        $("#pP").removeClass("avail").addClass("you");
         $("#uColumn").append($("#pP"));
         $("#aColumn").append($("#pL"));
         $("#aColumn").append($("#pHS"));
@@ -73,6 +73,7 @@ $(document).ready(function() {
       $("#pP").removeClass("fighter");
       $("#start").hide();
       $("#fight").show();
+      $(".images").removeClass("images").addClass("figimages");
       pickAvailFighter(id);
     });
   }
@@ -124,9 +125,16 @@ $(document).ready(function() {
       if (enemyDead == false){
         currentEnemy.health -= currentFighter.attack;
         $(".currentEH").text(currentEnemy.health);
+        $(".current").fadeOut(150);
+        $(".current").fadeIn(150);
+        $(".current").fadeOut(150);
+        $(".current").fadeIn(150);
+        $(".current").fadeOut(150);
+        $(".current").fadeIn(150);
+        $(".current").fadeOut(150);
+        $(".current").fadeIn(150);
         if (currentEnemy.health <= 0){
           currentEnemy.health = 0;
-          alert("You killed him!")
           currentEnemy.health = 0;
           $(".currentEH").text(currentEnemy.health);
           $("#dColumn").append($(".current"));
@@ -146,7 +154,14 @@ $(document).ready(function() {
           $(".currentFH").text(currentFighter.health);
           currentFighter.attack += baseAttack;
           $(".currentFA").text(currentFighter.attack);
-  
+          $(".you").fadeOut(150);
+          $(".you").fadeIn(150);
+          $(".you").fadeOut(150);
+          $(".you").fadeIn(150);
+          $(".you").fadeOut(150);
+          $(".you").fadeIn(150);
+          $(".you").fadeOut(150);
+          $(".you").fadeIn(150);
           if (currentFighter.health <= 0){
             alert("You died! Click ok to retry!")
             location.reload();

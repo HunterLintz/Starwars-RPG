@@ -4,6 +4,7 @@
 <head>
 
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Starwars RPG</title>
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -34,7 +35,7 @@
       </div>
       <div class="images avail fighter" id="pHS" val = "han">
         <div class="lb">Han Solo</div>  
-        <img src="assets/images/hanSolo.png" alt=""> 
+        <img id="hanImage" src="assets/images/hanSolo.png" alt=""> 
         <div class="lb" id="hanHealth">Health: <span id ="hanH">100</span></div>  
         <div class="lb" id="hanAttack">Attack: <span id ="hanA">15</span></div> 
         <div class="lb" id="hanCAttack">Counter Attack: 15</div>
@@ -66,17 +67,17 @@
 
       </div>
       <div class="fightColumn" id="cColumn">
-        <h3>Current Enemy:</h3>
+        <h3 class="marbot">Current Enemy:</h3>
 
 
       </div>
       <div class="fightColumn" id="aColumn">
-        <h3>Available Enemies:</h3>
+        <h3 class="marbot">Available Enemies:</h3>
 
 
       </div>
       <div class="fightColumn" id="dColumn">
-        <h3>Dead Enemies:</h3>
+        <h3 class="marbot">Dead Enemies:</h3>
 
 
       </div>
