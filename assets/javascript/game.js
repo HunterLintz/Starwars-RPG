@@ -73,7 +73,7 @@ $(document).ready(function() {
       $("#pP").removeClass("fighter");
       $("#start").hide();
       $("#fight").show();
-      $(".images").removeClass("images").addClass("figimages");
+      $(".pick").removeClass("pick").addClass("fightPic");
       pickAvailFighter(id);
     });
   }

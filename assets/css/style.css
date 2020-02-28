@@ -9,7 +9,6 @@ body{
 
 }
 header{
-  white-space: nowrap;
   background-color:#070D13;
   border-bottom: 5px double #FFE81F ;
   height: 140px;
@@ -134,17 +133,76 @@ Footer{
 .marbot{
   margin-bottom: 73px;
 }
-@media only screen and (max-width:1300px){
-  .playerImages{
-    height: 700px;
-    margin-left: 8%;
+@media only screen and (max-width:600px){
+  header{
+    white-space: normal;
+    width: 375;
+  }
+  h1{
+    font-size: 40px;
+    width: 85%;
+  }
+  h2{
+    width: 85%;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #h2{
+    margin-bottom: 10px;
+  }
+  body{
+    width: 100%;
+  }
+  #start{
+    width: 100%;
+    text-align: center;
+  }
+  body{
+    width: 100%;
+  }
+  .images{
+    width: 70%;
   }
   .figimages{
-    width: 100%;
-    height: 120px;
+    width: 70%;
+    height: width;
+    margin-bottom: 100px;
+  }
+  .pick{
+    height: 252px;
+  }
+  .playerImages{
+    margin-top: 0px;
+    margin-bottom: 100px;
+  }
+  #pP{
     margin-bottom: 200px;
   }
   button{
-    width:100%;
+    margin-left: 0;
+    margin-right: 13%;
+    width:70%;
+  }
+  Footer{
+    width: 85%;
+
+  }
+  h4{
+    width: 100%;
+    text-align: center;
+  }
+  .fightContainer{
+    width: 85%;
+  }
+  .fightColumn{
+    margin-bottom: 100px;
+    min-height: 600px;
+    margin-left: 0;
+    width: 45%;
+    display: block;
+  }
+  .fightPic{
+    height: 100px;
   }
 }
