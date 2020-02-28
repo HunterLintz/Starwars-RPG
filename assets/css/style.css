@@ -140,7 +140,7 @@ Footer{
   }
   h1{
     font-size: 40px;
-    width: 85%;
+    width: 100%;
   }
   h2{
     width: 85%;
@@ -163,18 +163,31 @@ Footer{
   }
   .images{
     width: 70%;
+    height: inherit;
+  }
+  .avail{
+    margin-bottom: 20px;
   }
   .figimages{
     width: 70%;
     height: width;
-    margin-bottom: 100px;
+    margin-bottom: 0px;
   }
   .pick{
     height: 252px;
   }
   .playerImages{
     margin-top: 0px;
-    margin-bottom: 100px;
+    margin-bottom: 0px;
+  }
+  #pL{
+    margin-bottom: 75px;
+  }
+  #pHS{
+    margin-bottom: 75px;
+  }
+  #pV{
+    margin-bottom: 75px;
   }
   #pP{
     margin-bottom: 200px;
@@ -185,7 +198,7 @@ Footer{
     width:70%;
   }
   Footer{
-    width: 85%;
+    width: 100%;
 
   }
   h4{
@@ -193,7 +206,7 @@ Footer{
     text-align: center;
   }
   .fightContainer{
-    width: 85%;
+    width: 100%;
   }
   .fightColumn{
     margin-bottom: 100px;
