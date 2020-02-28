@@ -143,7 +143,7 @@ Footer{
     width: 100%;
   }
   h2{
-    width: 85%;
+    width: 100%;
     font-size: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -162,6 +162,7 @@ Footer{
     width: 100%;
   }
   .images{
+    margin-left: 15%;
     width: 70%;
     height: inherit;
   }
@@ -177,6 +178,7 @@ Footer{
     height: 252px;
   }
   .playerImages{
+    width: 100%;
     margin-top: 0px;
     margin-bottom: 0px;
   }
@@ -194,7 +196,7 @@ Footer{
   }
   button{
     margin-left: 0;
-    margin-right: 13%;
+    margin-right: 0;
     width:70%;
   }
   Footer{
@@ -207,15 +209,16 @@ Footer{
   }
   .fightContainer{
     width: 100%;
+    margin-left: 5%;
   }
   .fightColumn{
     margin-bottom: 100px;
     min-height: 600px;
     margin-left: 0;
-    width: 45%;
+    width: 50%;
     display: block;
   }
   .fightPic{
-    height: 100px;
+    height: 118px;
   }
 }

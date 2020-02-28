@@ -24,6 +24,7 @@ $(document).ready(function() {
   var enemyDead = false;
   var baseEnemyHealth;
   var winCounter = 0;
+  var baseAttack;
 
   function pickFighter(){
     $("#fight").hide();
@@ -74,6 +75,7 @@ $(document).ready(function() {
       $("#start").hide();
       $("#fight").show();
       $(".pick").removeClass("pick").addClass("fightPic");
+      baseAttack = currentFighter.attack;
       pickAvailFighter(id);
     });
   }
@@ -119,7 +121,6 @@ $(document).ready(function() {
     enemyDead = false
     $(".currentEH").text(currentEnemy.health);
     currentEnemy.health = baseEnemyHealth;
-    var baseAttack = currentFighter.attack;
     $("#instruct").html("Attack Your Enemy!")
     $("#attackButton").unbind().click(function(){
       if (enemyDead == false){
@@ -133,6 +134,8 @@ $(document).ready(function() {
         $(".current").fadeIn(150);
         $(".current").fadeOut(150);
         $(".current").fadeIn(150);
+        currentFighter.attack += baseAttack;
+        $(".currentFA").text(currentFighter.attack);
         if (currentEnemy.health <= 0){
           currentEnemy.health = 0;
           currentEnemy.health = 0;
@@ -152,8 +155,6 @@ $(document).ready(function() {
         }else{
           currentFighter.health -= currentEnemy.counterAttack;
           $(".currentFH").text(currentFighter.health);
-          currentFighter.attack += baseAttack;
-          $(".currentFA").text(currentFighter.attack);
           $(".you").fadeOut(150);
           $(".you").fadeIn(150);
           $(".you").fadeOut(150);
