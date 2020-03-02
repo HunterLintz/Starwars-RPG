@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Starwars RPG</title>
@@ -11,9 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Anton|Monoton|Righteous&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
 </head>
-
 <body>
  <Header>
    <div id="head">
@@ -21,6 +17,7 @@
    </div>
  </Header>
  <Main>
+   <!--First Elements you see. They hide when you pick a fighter-->
   <div id="start">
     <div>
       <h2 id="h2">Pick a Fighter!</h2>
@@ -56,6 +53,7 @@
       </div>
     </div>
   </div>
+  <!--These elements becomes visible once a fighter is picked and are used for the rest of the game-->
   <div id="fight">
     <div>
       <h2 id="instruct">Pick Your Next Enemy!</h2>
@@ -64,22 +62,15 @@
       <div class="fightColumn" id="uColumn">
         <h3>You:</h3>
         <button id="attackButton" type="button">Attack</button>
-
       </div>
       <div class="fightColumn" id="cColumn">
         <h3 class="marbot">Current Enemy:</h3>
-
-
       </div>
       <div class="fightColumn" id="aColumn">
         <h3 class="marbot">Available Enemies:</h3>
-
-
       </div>
       <div class="fightColumn" id="dColumn">
         <h3 class="marbot">Dead Enemies:</h3>
-
-
       </div>
       </div>
     </div>
@@ -90,8 +81,6 @@
      <h4>© Hunter Lintz 2020</h4>
    </div>
  </Footer>
-
-
 <script src="assets/javascript/game.js"></script>
 </body>
 

@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
   var fighters = [
     luke = {name:"Luke",
             health: 130,
@@ -16,8 +15,7 @@ $(document).ready(function() {
     palpy = {name:"Palpy",
             health: 180,
             attack: 14,
-            counterAttack:20},
-  ]
+            counterAttack:20},]
   var currentFighter;
   var currentEnemy;
   var pickedFighter = false;
@@ -25,7 +23,7 @@ $(document).ready(function() {
   var baseEnemyHealth;
   var winCounter = 0;
   var baseAttack;
-
+  //This function is called when page loads. Used to check what Fighter the player clicks and sets variables accordingly 
   function pickFighter(){
     $("#fight").hide();
     $(".fighter").one("click", function(){
@@ -79,6 +77,7 @@ $(document).ready(function() {
       pickAvailFighter(id);
     });
   }
+  //Function is called right after they pick there fighter. This is to pick your first enemy from the available enemeys
   function pickAvailFighter(){
     pickedFighter = false;
     $("#instruct").html("Pick Your Next Enemy")
@@ -115,8 +114,8 @@ $(document).ready(function() {
       }
       fight();
     });
-
   }
+  //Function used to handle the fights between the player and their current enemy. Also has logic for winning or losing and resets the game when its over.
   function fight(){
     enemyDead = false
     $(".currentEH").text(currentEnemy.health);
@@ -171,6 +170,5 @@ $(document).ready(function() {
       }
     });
   }
-
   pickFighter();
 });
